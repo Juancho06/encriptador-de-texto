@@ -1,104 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
+    --color-background: #F3F5FC ;
     --color-primario: #E5E5E5;
     --color-secundario: #0A3871;
     --color-terciario: #D8DFE8;
+    --color-encriptar: #FFFFFF;
     --color-hover: #272727;
 
     --fuente-inter: "Inter", sans-serif;
     --fuente-krona: "Krona One", sans-serif;
 }
 
-
-* {
+*{
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: var(--color-primario);
+    background-color: var(--color-background);
     color: var(--color-secundario);
+    height: 100vh;
     box-sizing: border-box;
-   
+    font: var(--fuente-inter);
+
 }
 
-.presentacion{
+.encriptador{
     display: flex;
     align-items: center;
-    padding: 3% 2%;
+    margin: 10%;
     justify-content: space-between;
 }
 
-.presentacion__imagen{
-    margin-bottom: 80px;
-    width: 120px;
-
+.encriptador__operaciones{
+    justify-content: space-between;
 }
 
-.presentacion__texto {
-    margin-left: 160px; /* Mueve todos los elementos dentro del div .contenido 80px hacia la derecha */
-    width: 80%; /* Ocupa todo el ancho del contenedor */
-    height: 630px; /* Altura del textarea */
-    padding: 10px; /* Espaciado interno */
-    font-size: 32px; /* Tamaño de fuente */
-    line-height: 1.5; /* Altura de línea */
-    border: none; /* Borde del textarea */
-    border-radius: 8px; /* Esquinas redondeadas */
-    background-color: #f9f9f9; /* Color de fondo */
-    color: var(--color-secundario);
-    resize: vertical; /* Permitir cambiar el tamaño solo verticalmente */
-}
-
-.presentacion__texto:focus {
-    border-color: #007bff; /* Cambia el color del borde al hacer clic */
-    outline: none; /* Elimina el borde azul por defecto del navegador */
-}
-
-.container__botones{
-    margin-left: 160px; /* Mueve todos los elementos dentro del div .contenido 80px hacia la derecha */
-    display: flex;
-    overflow: hidden;
-    font-family: var(--fuente-inter);
-    gap: 24px;
-}
-
-.container__boton__encriptar{
+.encriptador__operaciones__botones__encriptador{
+    width: 328px;
     background-color: var(--color-secundario);
-    color: white;
-    width: 328px;
-    padding: 24px 24px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
+    text-align: center;
+    padding: 24px 0;
     border-radius: 24px;
+    font: var(--fuente-inter);
+    color: var(--color-encriptar);
+    text-decoration: none;
+    font-size: 16;
+    font-weight: 328;
+    border: 1px solid var(--color-secundario);
 }
-    
 
-.container__boton__desencriptar{
+.encriptador__operaciones__botones__desencriptar{
+    width: 328px;
     background-color: var(--color-terciario);
-    color: #333;
-    width: 328px;
-    padding: 24px 24px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
+    text-align: center;
+    padding: 24px 0;
     border-radius: 24px;
-}
-
-.container__resultados_salida__mensaje{
-    display: none;
-    margin-left: 160px; /* Mueve todos los elementos dentro del div .contenido 80px hacia la derecha */
-    width: 40%; /* Ocupa todo el ancho del contenedor */
-    height: 630px; /* Altura del textarea */
-    padding: 10px; /* Espaciado interno */
-    font-size: 32px; /* Tamaño de fuente */
-    line-height: 1.5; /* Altura de línea */
-    border: none; /* Borde del textarea */
-    border-radius: 8px; /* Esquinas redondeadas */
-    background-color: #f9f9f9; /* Color de fondo */
+    font: var(--fuente-inter);
     color: var(--color-secundario);
-    resize: vertical; /* Permitir cambiar el tamaño solo verticalmente */
+    text-decoration: none;
+    font-size: 16;
+    font-weight: 328;
+    border: 1px solid var(--color-secundario);
+
 }
